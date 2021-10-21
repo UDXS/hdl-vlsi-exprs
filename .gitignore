@@ -1,0 +1,16 @@
+#Quartus
+*.bak
+modelsim
+output_files
+greybox_tmp
+incremental_db
+db
+.qsys_edit
+*.log
+*.csd
+
+#Innovus/Encounter
+innovus
+
+# Node Modules
+node_modules

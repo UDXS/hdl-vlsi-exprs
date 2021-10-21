@@ -1,0 +1,26 @@
+UDXS ScreenPort Monochrome Stream Format (SPMS)
+
+SPMS is a simple format for monochrome framebuffer streams.
+It's optimized for monochrome UIs, which often use large areas
+of a single color or a dithering pattern.
+SPMS does scanline-by-scanline compression in a way that's accelerable
+in hardware while plenty fast in software.
+
+The first step in encoding to SPMS is to first perform a differential filter.
+In essence, only the first pixel in a sequence of repeated color pixels is
+illuminated. 
+To encode this, the encoder must operate bit by bit, enabling
+only bits that are different from the previous bit (called the "existing state").
+The initial state of the encoder is implicitly 0 at the start of each scanline
+so, if the first pixel on a scanline is 1, the output must be 1.
+
+
+
+Hardware Acceleration
+Though differential encoding and RLE can be sped up with some amount of
+combinational logic, the key mechanism for speeding up encoding is the
+use of multiple encoder cores. Each core would perform the task of
+differential encoding and then RLE for a different scanline.
+On SP for Asterix, for example, 16 encoder cores each compress about scanlines.
+Each core is fed a scanline by a FIFO, which in turn is fed by a shift register
+accepting serial data from 

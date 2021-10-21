@@ -1,0 +1,191 @@
+   A     M     M  BBBBBB   EEEEEEE  RRRRRR            IIIIIII  IIIIIII
+  A A    MM   MM  B     B  E        R     R              I        I
+ A   A   M M M M  B     B  E        R     R              I        I
+AAAAAAA  M  M  M  BBBBBB   EEEEEEE  RRRRRR               I        I
+A     A  M     M  B     B  E        R    R               I        I
+A     A  M     M  B     B  E        R     R              I        I
+A     A  M     M  BBBBBB   EEEEEEE  R     R           IIIIIII  IIIIIII
+---VARIABLES---
+
+Input bus (I): a read-only bus used for recieving data from other hardware.
+
+Output bus (O): a write-only bus used for sending data to other hardware.
+
+X and Y variables: general purpose variables, can be read from and written to.
+
+RA and RB: write-only memory banks that the ALU uses.
+
+Accumulator (A): ALU outputs are stored here, can be used as a variable.
+
+---MEMORY/DIRECT WRITE---
+If a memory or direct write instruction is executed, the next byte in a program
+will specify the value to be written or the memory address to read from or write
+to, depending on which instruction is executed. Example:
+00|3B
+01|5D
+When this code is executed, a value of 5D will be written to A.
+
+Memory should be connected to the CPU in a way that the read pins are connected
+to the input bus and the write pins are connected to the output bus.
+
+---OPCODES---
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+|OPCODES| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | A | B | C | D | E | F |
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+|   0   |NOP|ADD|SUB|AND| OR|XOR|NOA|NOB|INA|INB|DEA|DEB|   |   |   |   |
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+|   1   |LNA|RNA|LLA|RLA|LNB|RNB|LLB|RLB|MIA|MIB|   |   |   |   |   |   |
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+|   2   |TIO|TXO|TYO|TAO|TIX|   |TYX|TAX|TIY|TXY|   |TAY|TIA|TXA|TYA|   |
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+|   3   |TIM|TXM|TYM|TAM|TMO|TMX|TMY|TMA|DWO|DWX|DWY|DWA|JPM|JPD|   |   |
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+|   4   |RAI|RAX|RAY|RAA|RBI|RBX|RBY|RBA|RAM|RBM|RAD|RBD|JPI|JPX|JPY|JPA|
++-------+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+
+let's pretend the contents of RA are 10110111
+          and the contents of RB are 01100011
+
+NOP: Does absolutely nothing.
+
+ADD: Adds the contents of RA and RB. if the sum is over 255, it'll loop around to 0.
+output: 00011010
+
+SUB: Subtracts the contents of RB from RA. if the result is under 0, it'll loop around to 255.
+output: 01010100
+
+AND: ANDs the contents of RA and RB.
+output: 00100011
+
+OR: ORs the contents of RA and RB.
+output: 11110111
+
+XOR: XORs the contents of RA and RB.
+output: 11010100
+
+NOA: NOTs the contents of RA.
+output: 01001000
+
+NOB: NOTs the contents of RB.
+output: 10011100
+
+INA: Increments the contents of RA by 1.
+output: 10111000
+
+INB: Increments the contents of RB by 1.
+output: 01100100
+
+DEA: Decrements the contents of RA by 1.
+output: 10110110
+
+DEB: decrements the contents of RB by 1
+output: 01100010
+
+LNA: Shift the contents of RA to the left without looping.
+output: 01011011
+
+RNA: Shift the contents of RA to the right without looping.
+output: 01101110
+
+LLA: Shift the contents of RA to the left with looping.
+output: 110110111
+
+RLA: Shift the contents of RA to the right with looping.
+output: 101101111
+
+LNB: Shift the contents of RB to the left without looping.
+output: 11000110
+
+RNB: Shift the contents of RB to the right without looping.
+output: 00110001
+
+LLB: Shift the contents of RB to the left with looping.
+output: 11000110
+
+RLB: Shift the contents of RB to the right with looping.
+output: 10110001
+
+TIO: Transfer the contents of I to O.
+
+TXO: Transfer the contents of X to O.
+
+TYO: Transfer the contents of Y to O.
+
+TAO: Transfer the contents of A to O.
+
+TIX: Transfer the contents of I to X.
+
+TYX: Transfer the contents of Y to X.
+
+TAX: Transfer the contents of A to X.
+
+TIY: Transfer the contents of I to Y.
+
+TXY: Transfer the contents of X to Y.
+
+TAY: Transfer the contents of A to Y.
+
+TIA: Transfer the contents of I to A.
+
+TXA: Transfer the contents of X to A.
+
+TYA: Transfer the contents of Y to A.
+
+TIM: Transfer the contents of I to memory.
+
+TXM: Transfer the contents of X to memory.
+
+TYM: Transfer the contents of Y to memory.
+
+TAM: Transfer the contents of A to memory.
+
+TMO: Transfer the contents of memory to O.
+
+TMX: Transfer the contents of memory to X.
+
+TMY: Transfer the contents of memory to Y.
+
+TMA: Transfer the contents of memory to A.
+
+DWO: Directly write a value to O.
+
+DWX: Directly write a value to X.
+
+DWY: Directly write a value to Y.
+
+DWA: Directly write a value to A.
+
+JPM: Jump to an address in memory.
+
+JPD: Directly jump to an address.
+
+RAI: Transfer the contents of I to RA.
+
+RAX: Transfer the contents of X to RA.
+
+RAY: Transfer the contents of Y to RA.
+
+RAA: Transfer the contents of A to RA.
+
+RBI: Transfer the contents of I to RB.
+
+RBX: Transfer the contents of X to RB.
+
+RBY: Transfer the contents of Y to RB.
+
+RBA: Transfer the contents of A to RB.
+
+RAM: Transfer the contents of memory to RA.
+
+RBM: Transfer the contents of memory to RB.
+
+RAD: Directly write a value to RA.
+
+RBD: Directly write a value to RB.
+
+JPI: Jump to an address specified by I.
+
+JPX: Jump to an address specified by X.
+
+JPY: Jump to an address specified by Y.
+
+JPA: Jump to an address specified by A.

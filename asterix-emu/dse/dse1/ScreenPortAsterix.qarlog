@@ -1,0 +1,28 @@
+Quartus Prime Archive log --	C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/dse/dse1/ScreenPortAsterix.qarlog
+
+Archive:	C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/dse/dse1/ScreenPortAsterix.qar
+Date:		Wed May 05 13:18:30 2021
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/ScreenPortAsterix.dse
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/ScreenPortAsterix.qpf
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/ScreenPortAsterix.qsf
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/build.tcl
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/db/spian_auto_stripped.stp
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/output_files/spian.stp
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/scanline_fifo.bsf
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/scanline_fifo.qip
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/scanline_fifo.v
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/scanline_fifo_bb.v
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/scanline_streamer.v
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/spi_reader.v
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/spms.txt
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/top.sdc
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/top.v
+C:/Users/davit/OneDrive/Documents/Code/C/Pebble/asterix-emu/uart.v
+d:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 17 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
