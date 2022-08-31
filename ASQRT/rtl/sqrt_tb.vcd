@@ -1,0 +1,986 @@
+$date
+	Thu Feb 17 21:57:12 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module anfsqrt_sqrt_tb $end
+$var wire 16 ! result [15:0] $end
+$var reg 32 " query [31:0] $end
+$scope module DUT $end
+$var wire 32 # query [31:0] $end
+$var wire 16 $ result [15:0] $end
+$scope begin genblk1[1] $end
+$scope module unit $end
+$var wire 32 % prev_att [31:0] $end
+$var wire 32 & prev_eps [31:0] $end
+$var wire 32 ' prev_res [31:0] $end
+$var wire 32 ( this_res [31:0] $end
+$var wire 32 ) this_eps [31:0] $end
+$var wire 32 * this_delta_term1_half [31:0] $end
+$var wire 32 + this_delta [31:0] $end
+$var wire 32 , this_att_sq_exp [31:0] $end
+$var wire 32 - this_att_sq [31:0] $end
+$var wire 32 . this_att [31:0] $end
+$var wire 1 / cond_met $end
+$var reg 5 0 this_att_msb [4:0] $end
+$var integer 32 1 msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[2] $end
+$scope module unit $end
+$var wire 32 2 prev_att [31:0] $end
+$var wire 32 3 prev_eps [31:0] $end
+$var wire 32 4 prev_res [31:0] $end
+$var wire 32 5 this_res [31:0] $end
+$var wire 32 6 this_eps [31:0] $end
+$var wire 32 7 this_delta_term1_half [31:0] $end
+$var wire 32 8 this_delta [31:0] $end
+$var wire 32 9 this_att_sq_exp [31:0] $end
+$var wire 32 : this_att_sq [31:0] $end
+$var wire 32 ; this_att [31:0] $end
+$var wire 1 < cond_met $end
+$var reg 5 = this_att_msb [4:0] $end
+$var integer 32 > msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[3] $end
+$scope module unit $end
+$var wire 32 ? prev_att [31:0] $end
+$var wire 32 @ prev_eps [31:0] $end
+$var wire 32 A prev_res [31:0] $end
+$var wire 32 B this_res [31:0] $end
+$var wire 32 C this_eps [31:0] $end
+$var wire 32 D this_delta_term1_half [31:0] $end
+$var wire 32 E this_delta [31:0] $end
+$var wire 32 F this_att_sq_exp [31:0] $end
+$var wire 32 G this_att_sq [31:0] $end
+$var wire 32 H this_att [31:0] $end
+$var wire 1 I cond_met $end
+$var reg 5 J this_att_msb [4:0] $end
+$var integer 32 K msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[4] $end
+$scope module unit $end
+$var wire 32 L prev_att [31:0] $end
+$var wire 32 M prev_eps [31:0] $end
+$var wire 32 N prev_res [31:0] $end
+$var wire 32 O this_res [31:0] $end
+$var wire 32 P this_eps [31:0] $end
+$var wire 32 Q this_delta_term1_half [31:0] $end
+$var wire 32 R this_delta [31:0] $end
+$var wire 32 S this_att_sq_exp [31:0] $end
+$var wire 32 T this_att_sq [31:0] $end
+$var wire 32 U this_att [31:0] $end
+$var wire 1 V cond_met $end
+$var reg 5 W this_att_msb [4:0] $end
+$var integer 32 X msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[5] $end
+$scope module unit $end
+$var wire 32 Y prev_att [31:0] $end
+$var wire 32 Z prev_eps [31:0] $end
+$var wire 32 [ prev_res [31:0] $end
+$var wire 32 \ this_res [31:0] $end
+$var wire 32 ] this_eps [31:0] $end
+$var wire 32 ^ this_delta_term1_half [31:0] $end
+$var wire 32 _ this_delta [31:0] $end
+$var wire 32 ` this_att_sq_exp [31:0] $end
+$var wire 32 a this_att_sq [31:0] $end
+$var wire 32 b this_att [31:0] $end
+$var wire 1 c cond_met $end
+$var reg 5 d this_att_msb [4:0] $end
+$var integer 32 e msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[6] $end
+$scope module unit $end
+$var wire 32 f prev_att [31:0] $end
+$var wire 32 g prev_eps [31:0] $end
+$var wire 32 h prev_res [31:0] $end
+$var wire 32 i this_res [31:0] $end
+$var wire 32 j this_eps [31:0] $end
+$var wire 32 k this_delta_term1_half [31:0] $end
+$var wire 32 l this_delta [31:0] $end
+$var wire 32 m this_att_sq_exp [31:0] $end
+$var wire 32 n this_att_sq [31:0] $end
+$var wire 32 o this_att [31:0] $end
+$var wire 1 p cond_met $end
+$var reg 5 q this_att_msb [4:0] $end
+$var integer 32 r msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[7] $end
+$scope module unit $end
+$var wire 32 s prev_att [31:0] $end
+$var wire 32 t prev_eps [31:0] $end
+$var wire 32 u prev_res [31:0] $end
+$var wire 32 v this_res [31:0] $end
+$var wire 32 w this_eps [31:0] $end
+$var wire 32 x this_delta_term1_half [31:0] $end
+$var wire 32 y this_delta [31:0] $end
+$var wire 32 z this_att_sq_exp [31:0] $end
+$var wire 32 { this_att_sq [31:0] $end
+$var wire 32 | this_att [31:0] $end
+$var wire 1 } cond_met $end
+$var reg 5 ~ this_att_msb [4:0] $end
+$var integer 32 !" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[8] $end
+$scope module unit $end
+$var wire 32 "" prev_att [31:0] $end
+$var wire 32 #" prev_eps [31:0] $end
+$var wire 32 $" prev_res [31:0] $end
+$var wire 32 %" this_res [31:0] $end
+$var wire 32 &" this_eps [31:0] $end
+$var wire 32 '" this_delta_term1_half [31:0] $end
+$var wire 32 (" this_delta [31:0] $end
+$var wire 32 )" this_att_sq_exp [31:0] $end
+$var wire 32 *" this_att_sq [31:0] $end
+$var wire 32 +" this_att [31:0] $end
+$var wire 1 ," cond_met $end
+$var reg 5 -" this_att_msb [4:0] $end
+$var integer 32 ." msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[9] $end
+$scope module unit $end
+$var wire 32 /" prev_att [31:0] $end
+$var wire 32 0" prev_eps [31:0] $end
+$var wire 32 1" prev_res [31:0] $end
+$var wire 32 2" this_res [31:0] $end
+$var wire 32 3" this_eps [31:0] $end
+$var wire 32 4" this_delta_term1_half [31:0] $end
+$var wire 32 5" this_delta [31:0] $end
+$var wire 32 6" this_att_sq_exp [31:0] $end
+$var wire 32 7" this_att_sq [31:0] $end
+$var wire 32 8" this_att [31:0] $end
+$var wire 1 9" cond_met $end
+$var reg 5 :" this_att_msb [4:0] $end
+$var integer 32 ;" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[10] $end
+$scope module unit $end
+$var wire 32 <" prev_att [31:0] $end
+$var wire 32 =" prev_eps [31:0] $end
+$var wire 32 >" prev_res [31:0] $end
+$var wire 32 ?" this_res [31:0] $end
+$var wire 32 @" this_eps [31:0] $end
+$var wire 32 A" this_delta_term1_half [31:0] $end
+$var wire 32 B" this_delta [31:0] $end
+$var wire 32 C" this_att_sq_exp [31:0] $end
+$var wire 32 D" this_att_sq [31:0] $end
+$var wire 32 E" this_att [31:0] $end
+$var wire 1 F" cond_met $end
+$var reg 5 G" this_att_msb [4:0] $end
+$var integer 32 H" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[11] $end
+$scope module unit $end
+$var wire 32 I" prev_att [31:0] $end
+$var wire 32 J" prev_eps [31:0] $end
+$var wire 32 K" prev_res [31:0] $end
+$var wire 32 L" this_res [31:0] $end
+$var wire 32 M" this_eps [31:0] $end
+$var wire 32 N" this_delta_term1_half [31:0] $end
+$var wire 32 O" this_delta [31:0] $end
+$var wire 32 P" this_att_sq_exp [31:0] $end
+$var wire 32 Q" this_att_sq [31:0] $end
+$var wire 32 R" this_att [31:0] $end
+$var wire 1 S" cond_met $end
+$var reg 5 T" this_att_msb [4:0] $end
+$var integer 32 U" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[12] $end
+$scope module unit $end
+$var wire 32 V" prev_att [31:0] $end
+$var wire 32 W" prev_eps [31:0] $end
+$var wire 32 X" prev_res [31:0] $end
+$var wire 32 Y" this_res [31:0] $end
+$var wire 32 Z" this_eps [31:0] $end
+$var wire 32 [" this_delta_term1_half [31:0] $end
+$var wire 32 \" this_delta [31:0] $end
+$var wire 32 ]" this_att_sq_exp [31:0] $end
+$var wire 32 ^" this_att_sq [31:0] $end
+$var wire 32 _" this_att [31:0] $end
+$var wire 1 `" cond_met $end
+$var reg 5 a" this_att_msb [4:0] $end
+$var integer 32 b" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[13] $end
+$scope module unit $end
+$var wire 32 c" prev_att [31:0] $end
+$var wire 32 d" prev_eps [31:0] $end
+$var wire 32 e" prev_res [31:0] $end
+$var wire 32 f" this_res [31:0] $end
+$var wire 32 g" this_eps [31:0] $end
+$var wire 32 h" this_delta_term1_half [31:0] $end
+$var wire 32 i" this_delta [31:0] $end
+$var wire 32 j" this_att_sq_exp [31:0] $end
+$var wire 32 k" this_att_sq [31:0] $end
+$var wire 32 l" this_att [31:0] $end
+$var wire 1 m" cond_met $end
+$var reg 5 n" this_att_msb [4:0] $end
+$var integer 32 o" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[14] $end
+$scope module unit $end
+$var wire 32 p" prev_att [31:0] $end
+$var wire 32 q" prev_eps [31:0] $end
+$var wire 32 r" prev_res [31:0] $end
+$var wire 32 s" this_res [31:0] $end
+$var wire 32 t" this_eps [31:0] $end
+$var wire 32 u" this_delta_term1_half [31:0] $end
+$var wire 32 v" this_delta [31:0] $end
+$var wire 32 w" this_att_sq_exp [31:0] $end
+$var wire 32 x" this_att_sq [31:0] $end
+$var wire 32 y" this_att [31:0] $end
+$var wire 1 z" cond_met $end
+$var reg 5 {" this_att_msb [4:0] $end
+$var integer 32 |" msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[15] $end
+$scope module unit $end
+$var wire 32 }" prev_att [31:0] $end
+$var wire 32 ~" prev_eps [31:0] $end
+$var wire 32 !# prev_res [31:0] $end
+$var wire 32 "# this_res [31:0] $end
+$var wire 32 ## this_eps [31:0] $end
+$var wire 32 $# this_delta_term1_half [31:0] $end
+$var wire 32 %# this_delta [31:0] $end
+$var wire 32 &# this_att_sq_exp [31:0] $end
+$var wire 32 '# this_att_sq [31:0] $end
+$var wire 32 (# this_att [31:0] $end
+$var wire 1 )# cond_met $end
+$var reg 5 *# this_att_msb [4:0] $end
+$var integer 32 +# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[16] $end
+$scope module unit $end
+$var wire 32 ,# prev_att [31:0] $end
+$var wire 32 -# prev_eps [31:0] $end
+$var wire 32 .# prev_res [31:0] $end
+$var wire 32 /# this_res [31:0] $end
+$var wire 32 0# this_eps [31:0] $end
+$var wire 32 1# this_delta_term1_half [31:0] $end
+$var wire 32 2# this_delta [31:0] $end
+$var wire 32 3# this_att_sq_exp [31:0] $end
+$var wire 32 4# this_att_sq [31:0] $end
+$var wire 32 5# this_att [31:0] $end
+$var wire 1 6# cond_met $end
+$var reg 5 7# this_att_msb [4:0] $end
+$var integer 32 8# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[17] $end
+$scope module unit $end
+$var wire 32 9# prev_att [31:0] $end
+$var wire 32 :# prev_eps [31:0] $end
+$var wire 32 ;# prev_res [31:0] $end
+$var wire 32 <# this_res [31:0] $end
+$var wire 32 =# this_eps [31:0] $end
+$var wire 32 ># this_delta_term1_half [31:0] $end
+$var wire 32 ?# this_delta [31:0] $end
+$var wire 32 @# this_att_sq_exp [31:0] $end
+$var wire 32 A# this_att_sq [31:0] $end
+$var wire 32 B# this_att [31:0] $end
+$var wire 1 C# cond_met $end
+$var reg 5 D# this_att_msb [4:0] $end
+$var integer 32 E# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[18] $end
+$scope module unit $end
+$var wire 32 F# prev_att [31:0] $end
+$var wire 32 G# prev_eps [31:0] $end
+$var wire 32 H# prev_res [31:0] $end
+$var wire 32 I# this_res [31:0] $end
+$var wire 32 J# this_eps [31:0] $end
+$var wire 32 K# this_delta_term1_half [31:0] $end
+$var wire 32 L# this_delta [31:0] $end
+$var wire 32 M# this_att_sq_exp [31:0] $end
+$var wire 32 N# this_att_sq [31:0] $end
+$var wire 32 O# this_att [31:0] $end
+$var wire 1 P# cond_met $end
+$var reg 5 Q# this_att_msb [4:0] $end
+$var integer 32 R# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[19] $end
+$scope module unit $end
+$var wire 32 S# prev_att [31:0] $end
+$var wire 32 T# prev_eps [31:0] $end
+$var wire 32 U# prev_res [31:0] $end
+$var wire 32 V# this_res [31:0] $end
+$var wire 32 W# this_eps [31:0] $end
+$var wire 32 X# this_delta_term1_half [31:0] $end
+$var wire 32 Y# this_delta [31:0] $end
+$var wire 32 Z# this_att_sq_exp [31:0] $end
+$var wire 32 [# this_att_sq [31:0] $end
+$var wire 32 \# this_att [31:0] $end
+$var wire 1 ]# cond_met $end
+$var reg 5 ^# this_att_msb [4:0] $end
+$var integer 32 _# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[20] $end
+$scope module unit $end
+$var wire 32 `# prev_att [31:0] $end
+$var wire 32 a# prev_eps [31:0] $end
+$var wire 32 b# prev_res [31:0] $end
+$var wire 32 c# this_res [31:0] $end
+$var wire 32 d# this_eps [31:0] $end
+$var wire 32 e# this_delta_term1_half [31:0] $end
+$var wire 32 f# this_delta [31:0] $end
+$var wire 32 g# this_att_sq_exp [31:0] $end
+$var wire 32 h# this_att_sq [31:0] $end
+$var wire 32 i# this_att [31:0] $end
+$var wire 1 j# cond_met $end
+$var reg 5 k# this_att_msb [4:0] $end
+$var integer 32 l# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[21] $end
+$scope module unit $end
+$var wire 32 m# prev_att [31:0] $end
+$var wire 32 n# prev_eps [31:0] $end
+$var wire 32 o# prev_res [31:0] $end
+$var wire 32 p# this_res [31:0] $end
+$var wire 32 q# this_eps [31:0] $end
+$var wire 32 r# this_delta_term1_half [31:0] $end
+$var wire 32 s# this_delta [31:0] $end
+$var wire 32 t# this_att_sq_exp [31:0] $end
+$var wire 32 u# this_att_sq [31:0] $end
+$var wire 32 v# this_att [31:0] $end
+$var wire 1 w# cond_met $end
+$var reg 5 x# this_att_msb [4:0] $end
+$var integer 32 y# msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[22] $end
+$scope module unit $end
+$var wire 32 z# prev_att [31:0] $end
+$var wire 32 {# prev_eps [31:0] $end
+$var wire 32 |# prev_res [31:0] $end
+$var wire 32 }# this_res [31:0] $end
+$var wire 32 ~# this_eps [31:0] $end
+$var wire 32 !$ this_delta_term1_half [31:0] $end
+$var wire 32 "$ this_delta [31:0] $end
+$var wire 32 #$ this_att_sq_exp [31:0] $end
+$var wire 32 $$ this_att_sq [31:0] $end
+$var wire 32 %$ this_att [31:0] $end
+$var wire 1 &$ cond_met $end
+$var reg 5 '$ this_att_msb [4:0] $end
+$var integer 32 ($ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[23] $end
+$scope module unit $end
+$var wire 32 )$ prev_att [31:0] $end
+$var wire 32 *$ prev_eps [31:0] $end
+$var wire 32 +$ prev_res [31:0] $end
+$var wire 32 ,$ this_res [31:0] $end
+$var wire 32 -$ this_eps [31:0] $end
+$var wire 32 .$ this_delta_term1_half [31:0] $end
+$var wire 32 /$ this_delta [31:0] $end
+$var wire 32 0$ this_att_sq_exp [31:0] $end
+$var wire 32 1$ this_att_sq [31:0] $end
+$var wire 32 2$ this_att [31:0] $end
+$var wire 1 3$ cond_met $end
+$var reg 5 4$ this_att_msb [4:0] $end
+$var integer 32 5$ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[24] $end
+$scope module unit $end
+$var wire 32 6$ prev_att [31:0] $end
+$var wire 32 7$ prev_eps [31:0] $end
+$var wire 32 8$ prev_res [31:0] $end
+$var wire 32 9$ this_res [31:0] $end
+$var wire 32 :$ this_eps [31:0] $end
+$var wire 32 ;$ this_delta_term1_half [31:0] $end
+$var wire 32 <$ this_delta [31:0] $end
+$var wire 32 =$ this_att_sq_exp [31:0] $end
+$var wire 32 >$ this_att_sq [31:0] $end
+$var wire 32 ?$ this_att [31:0] $end
+$var wire 1 @$ cond_met $end
+$var reg 5 A$ this_att_msb [4:0] $end
+$var integer 32 B$ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[25] $end
+$scope module unit $end
+$var wire 32 C$ prev_att [31:0] $end
+$var wire 32 D$ prev_eps [31:0] $end
+$var wire 32 E$ prev_res [31:0] $end
+$var wire 32 F$ this_res [31:0] $end
+$var wire 32 G$ this_eps [31:0] $end
+$var wire 32 H$ this_delta_term1_half [31:0] $end
+$var wire 32 I$ this_delta [31:0] $end
+$var wire 32 J$ this_att_sq_exp [31:0] $end
+$var wire 32 K$ this_att_sq [31:0] $end
+$var wire 32 L$ this_att [31:0] $end
+$var wire 1 M$ cond_met $end
+$var reg 5 N$ this_att_msb [4:0] $end
+$var integer 32 O$ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[26] $end
+$scope module unit $end
+$var wire 32 P$ prev_att [31:0] $end
+$var wire 32 Q$ prev_eps [31:0] $end
+$var wire 32 R$ prev_res [31:0] $end
+$var wire 32 S$ this_res [31:0] $end
+$var wire 32 T$ this_eps [31:0] $end
+$var wire 32 U$ this_delta_term1_half [31:0] $end
+$var wire 32 V$ this_delta [31:0] $end
+$var wire 32 W$ this_att_sq_exp [31:0] $end
+$var wire 32 X$ this_att_sq [31:0] $end
+$var wire 32 Y$ this_att [31:0] $end
+$var wire 1 Z$ cond_met $end
+$var reg 5 [$ this_att_msb [4:0] $end
+$var integer 32 \$ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[27] $end
+$scope module unit $end
+$var wire 32 ]$ prev_att [31:0] $end
+$var wire 32 ^$ prev_eps [31:0] $end
+$var wire 32 _$ prev_res [31:0] $end
+$var wire 32 `$ this_res [31:0] $end
+$var wire 32 a$ this_eps [31:0] $end
+$var wire 32 b$ this_delta_term1_half [31:0] $end
+$var wire 32 c$ this_delta [31:0] $end
+$var wire 32 d$ this_att_sq_exp [31:0] $end
+$var wire 32 e$ this_att_sq [31:0] $end
+$var wire 32 f$ this_att [31:0] $end
+$var wire 1 g$ cond_met $end
+$var reg 5 h$ this_att_msb [4:0] $end
+$var integer 32 i$ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[28] $end
+$scope module unit $end
+$var wire 32 j$ prev_att [31:0] $end
+$var wire 32 k$ prev_eps [31:0] $end
+$var wire 32 l$ prev_res [31:0] $end
+$var wire 32 m$ this_res [31:0] $end
+$var wire 32 n$ this_eps [31:0] $end
+$var wire 32 o$ this_delta_term1_half [31:0] $end
+$var wire 32 p$ this_delta [31:0] $end
+$var wire 32 q$ this_att_sq_exp [31:0] $end
+$var wire 32 r$ this_att_sq [31:0] $end
+$var wire 32 s$ this_att [31:0] $end
+$var wire 1 t$ cond_met $end
+$var reg 5 u$ this_att_msb [4:0] $end
+$var integer 32 v$ msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[29] $end
+$scope module unit $end
+$var wire 32 w$ prev_att [31:0] $end
+$var wire 32 x$ prev_eps [31:0] $end
+$var wire 32 y$ prev_res [31:0] $end
+$var wire 32 z$ this_res [31:0] $end
+$var wire 32 {$ this_eps [31:0] $end
+$var wire 32 |$ this_delta_term1_half [31:0] $end
+$var wire 32 }$ this_delta [31:0] $end
+$var wire 32 ~$ this_att_sq_exp [31:0] $end
+$var wire 32 !% this_att_sq [31:0] $end
+$var wire 32 "% this_att [31:0] $end
+$var wire 1 #% cond_met $end
+$var reg 5 $% this_att_msb [4:0] $end
+$var integer 32 %% msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[30] $end
+$scope module unit $end
+$var wire 32 &% prev_att [31:0] $end
+$var wire 32 '% prev_eps [31:0] $end
+$var wire 32 (% prev_res [31:0] $end
+$var wire 32 )% this_res [31:0] $end
+$var wire 32 *% this_eps [31:0] $end
+$var wire 32 +% this_delta_term1_half [31:0] $end
+$var wire 32 ,% this_delta [31:0] $end
+$var wire 32 -% this_att_sq_exp [31:0] $end
+$var wire 32 .% this_att_sq [31:0] $end
+$var wire 32 /% this_att [31:0] $end
+$var wire 1 0% cond_met $end
+$var reg 5 1% this_att_msb [4:0] $end
+$var integer 32 2% msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[31] $end
+$scope module unit $end
+$var wire 32 3% prev_att [31:0] $end
+$var wire 32 4% prev_eps [31:0] $end
+$var wire 32 5% prev_res [31:0] $end
+$var wire 32 6% this_res [31:0] $end
+$var wire 32 7% this_eps [31:0] $end
+$var wire 32 8% this_delta_term1_half [31:0] $end
+$var wire 32 9% this_delta [31:0] $end
+$var wire 32 :% this_att_sq_exp [31:0] $end
+$var wire 32 ;% this_att_sq [31:0] $end
+$var wire 32 <% this_att [31:0] $end
+$var wire 1 =% cond_met $end
+$var reg 5 >% this_att_msb [4:0] $end
+$var integer 32 ?% msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$scope begin genblk1[32] $end
+$scope module unit $end
+$var wire 32 @% prev_att [31:0] $end
+$var wire 32 A% prev_eps [31:0] $end
+$var wire 32 B% prev_res [31:0] $end
+$var wire 32 C% this_res [31:0] $end
+$var wire 32 D% this_eps [31:0] $end
+$var wire 32 E% this_delta_term1_half [31:0] $end
+$var wire 32 F% this_delta [31:0] $end
+$var wire 32 G% this_att_sq_exp [31:0] $end
+$var wire 32 H% this_att_sq [31:0] $end
+$var wire 32 I% this_att [31:0] $end
+$var wire 1 J% cond_met $end
+$var reg 5 K% this_att_msb [4:0] $end
+$var integer 32 L% msb_idx [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100000 L%
+b0 K%
+0J%
+b0 I%
+b1 H%
+b0 G%
+b10000100100101 F%
+b1000010010010 E%
+b1010100111100 D%
+b1000010010010 C%
+b1000010010010 B%
+b1010100111100 A%
+b0 @%
+b100000 ?%
+b0 >%
+0=%
+b0 <%
+b1 ;%
+b0 :%
+b10000100100101 9%
+b1000010010010 8%
+b1010100111100 7%
+b1000010010010 6%
+b1000010010010 5%
+b1010100111100 4%
+b0 3%
+b100000 2%
+b0 1%
+00%
+b0 /%
+b1 .%
+b0 -%
+b10000100100101 ,%
+b1000010010010 +%
+b1010100111100 *%
+b1000010010010 )%
+b1000010010010 (%
+b1010100111100 '%
+b0 &%
+b100000 %%
+b0 $%
+0#%
+b0 "%
+b1 !%
+b0 ~$
+b10000100100101 }$
+b1000010010010 |$
+b1010100111100 {$
+b1000010010010 z$
+b1000010010010 y$
+b1010100111100 x$
+b0 w$
+b100000 v$
+b0 u$
+0t$
+b0 s$
+b1 r$
+b0 q$
+b10000100100101 p$
+b1000010010010 o$
+b1010100111100 n$
+b1000010010010 m$
+b1000010010010 l$
+b1010100111100 k$
+b0 j$
+b100000 i$
+b0 h$
+0g$
+b0 f$
+b1 e$
+b0 d$
+b10000100100101 c$
+b1000010010010 b$
+b1010100111100 a$
+b1000010010010 `$
+b1000010010010 _$
+b1010100111100 ^$
+b0 ]$
+b100000 \$
+b0 [$
+0Z$
+b0 Y$
+b1 X$
+b0 W$
+b10000100100101 V$
+b1000010010010 U$
+b1010100111100 T$
+b1000010010010 S$
+b1000010010010 R$
+b1010100111100 Q$
+b0 P$
+b100000 O$
+b0 N$
+0M$
+b0 L$
+b1 K$
+b0 J$
+b10000100100101 I$
+b1000010010010 H$
+b1010100111100 G$
+b1000010010010 F$
+b1000010010010 E$
+b1010100111100 D$
+b0 C$
+b100000 B$
+b0 A$
+0@$
+b0 ?$
+b1 >$
+b0 =$
+b10000100100101 <$
+b1000010010010 ;$
+b1010100111100 :$
+b1000010010010 9$
+b1000010010010 8$
+b1010100111100 7$
+b0 6$
+b100000 5$
+b0 4$
+03$
+b0 2$
+b1 1$
+b0 0$
+b10000100100101 /$
+b1000010010010 .$
+b1010100111100 -$
+b1000010010010 ,$
+b1000010010010 +$
+b1010100111100 *$
+b0 )$
+b100000 ($
+b0 '$
+0&$
+b0 %$
+b1 $$
+b0 #$
+b10000100100101 "$
+b1000010010010 !$
+b1010100111100 ~#
+b1000010010010 }#
+b1000010010010 |#
+b1010100111100 {#
+b0 z#
+b100000 y#
+b0 x#
+0w#
+b0 v#
+b1 u#
+b0 t#
+b10000100100101 s#
+b1000010010010 r#
+b1010100111100 q#
+b1000010010010 p#
+b1000010010010 o#
+b1010100111100 n#
+b0 m#
+b100000 l#
+b0 k#
+0j#
+b0 i#
+b1 h#
+b0 g#
+b10000100100101 f#
+b1000010010010 e#
+b1010100111100 d#
+b1000010010010 c#
+b1000010010010 b#
+b1010100111100 a#
+b0 `#
+b100000 _#
+b0 ^#
+0]#
+b0 \#
+b1 [#
+b0 Z#
+b10000100100101 Y#
+b1000010010010 X#
+b1010100111100 W#
+b1000010010010 V#
+b1000010010010 U#
+b1010100111100 T#
+b0 S#
+b100000 R#
+b0 Q#
+0P#
+b0 O#
+b1 N#
+b0 M#
+b10000100100101 L#
+b1000010010010 K#
+b1010100111100 J#
+b1000010010010 I#
+b1000010010010 H#
+b1010100111100 G#
+b0 F#
+b100000 E#
+b0 D#
+0C#
+b0 B#
+b1 A#
+b0 @#
+b10000100100101 ?#
+b1000010010010 >#
+b1010100111100 =#
+b1000010010010 <#
+b1000010010010 ;#
+b1010100111100 :#
+b1 9#
+b100000 8#
+b0 7#
+06#
+b1 5#
+b1 4#
+b0 3#
+b10000100100101 2#
+b1000010010010 1#
+b1010100111100 0#
+b1000010010010 /#
+b1000010010010 .#
+b1010100111100 -#
+b10 ,#
+b100000 +#
+b1 *#
+1)#
+b10 (#
+b100 '#
+b10 &#
+b100001001000100 %#
+b10000100100000 $#
+b1010100111100 ##
+b1000010010010 "#
+b1000010010000 !#
+b101011110000000 ~"
+b100 }"
+b100000 |"
+b10 {"
+0z"
+b100 y"
+b10000 x"
+b100 w"
+b1000010010010000 v"
+b100001001000000 u"
+b101011110000000 t"
+b1000010010000 s"
+b1000010010000 r"
+b101011110000000 q"
+b1000 p"
+b100000 o"
+b11 n"
+0m"
+b1000 l"
+b1000000 k"
+b110 j"
+b10000100101000000 i"
+b1000010010000000 h"
+b101011110000000 g"
+b1000010010000 f"
+b1000010010000 e"
+b101011110000000 d"
+b10000 c"
+b100000 b"
+b100 a"
+1`"
+b10000 _"
+b100000000 ^"
+b1000 ]"
+b100001000100000000 \"
+b10000100000000000 ["
+b101011110000000 Z"
+b1000010010000 Y"
+b1000010000000 X"
+b100110100010000000 W"
+b100000 V"
+b100000 U"
+b101 T"
+0S"
+b100000 R"
+b10000000000 Q"
+b1010 P"
+b1000010010000000000 O"
+b100001000000000000 N"
+b100110100010000000 M"
+b1000010000000 L"
+b1000010000000 K"
+b100110100010000000 J"
+b1000000 I"
+b100000 H"
+b110 G"
+0F"
+b1000000 E"
+b1000000000000 D"
+b1100 C"
+b10000101000000000000 B"
+b1000010000000000000 A"
+b100110100010000000 @"
+b1000010000000 ?"
+b1000010000000 >"
+b100110100010000000 ="
+b10000000 <"
+b100000 ;"
+b111 :"
+19"
+b10000000 8"
+b100000000000000 7"
+b1110 6"
+b100000100000000000000 5"
+b10000000000000000000 4"
+b100110100010000000 3"
+b1000010000000 2"
+b1000000000000 1"
+b100101010100010000000 0"
+b100000000 /"
+b100000 ."
+b1000 -"
+0,"
+b100000000 +"
+b10000000000000000 *"
+b10000 )"
+b1000010000000000000000 ("
+b100000000000000000000 '"
+b100101010100010000000 &"
+b1000000000000 %"
+b1000000000000 $"
+b100101010100010000000 #"
+b1000000000 ""
+b100000 !"
+b1001 ~
+0}
+b1000000000 |
+b1000000000000000000 {
+b10010 z
+b10001000000000000000000 y
+b1000000000000000000000 x
+b100101010100010000000 w
+b1000000000000 v
+b1000000000000 u
+b100101010100010000000 t
+b10000000000 s
+b100000 r
+b1010 q
+0p
+b10000000000 o
+b100000000000000000000 n
+b10100 m
+b100100000000000000000000 l
+b10000000000000000000000 k
+b100101010100010000000 j
+b1000000000000 i
+b1000000000000 h
+b100101010100010000000 g
+b100000000000 f
+b100000 e
+b1011 d
+0c
+b100000000000 b
+b10000000000000000000000 a
+b10110 `
+b1010000000000000000000000 _
+b100000000000000000000000 ^
+b100101010100010000000 ]
+b1000000000000 \
+b1000000000000 [
+b100101010100010000000 Z
+b1000000000000 Y
+b100000 X
+b1100 W
+1V
+b1000000000000 U
+b1000000000000000000000000 T
+b11000 S
+b1000000000000000000000000 R
+b0 Q
+b100101010100010000000 P
+b1000000000000 O
+b0 N
+b1000100101010100010000000 M
+b10000000000000 L
+b100000 K
+b1101 J
+0I
+b10000000000000 H
+b100000000000000000000000000 G
+b11010 F
+b100000000000000000000000000 E
+b0 D
+b1000100101010100010000000 C
+b0 B
+b0 A
+b1000100101010100010000000 @
+b100000000000000 ?
+b100000 >
+b1110 =
+0<
+b100000000000000 ;
+b10000000000000000000000000000 :
+b11100 9
+b10000000000000000000000000000 8
+b0 7
+b1000100101010100010000000 6
+b0 5
+b0 4
+b1000100101010100010000000 3
+b1000000000000000 2
+b100000 1
+b1111 0
+0/
+b1000000000000000 .
+b1000000000000000000000000000000 -
+b11110 ,
+b1000000000000000000000000000000 +
+b0 *
+b1000100101010100010000000 )
+b0 (
+b0 '
+b1000100101010100010000000 &
+b10000000000000000 %
+b1000010010010 $
+b1000100101010100010000000 #
+b1000100101010100010000000 "
+b1000010010010 !
+$end
+#1

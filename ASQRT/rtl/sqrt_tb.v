@@ -8,6 +8,8 @@ module anfsqrt_sqrt_tb();
     anfsqrt_sqrt DUT (query, result);
 
     initial begin
+        $dumpfile("sqrt_tb.vcd");
+        $dumpvars;  
         query = 18000000;
         #1 $display("Query: ", query, " Result:", result);
     end

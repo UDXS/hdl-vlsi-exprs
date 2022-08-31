@@ -15,28 +15,28 @@
 */
 
 module anfsqrt_sqrtiu (
-    input [31:0] prev_att,
-    input [31:0] prev_eps,
-    input [31:0] prev_res,
+    input [6:0] prev_att,
+    input [6:0] prev_eps,
+    input [6:0] prev_res,
 
-    output [31:0] this_att,
-    output [31:0] this_eps,
-    output [31:0] this_res
+    output [6:0] this_att,
+    output [6:0] this_eps,
+    output [6:0] this_res
 );
 
-    assign this_att = {1'b0, prev_att[31:1]};
+    assign this_att = {1'b0, prev_att[6:1]};
 
-	wire [31:0] this_delta_term1_half;
-	wire [31:0] this_delta;
-	reg [4:0] this_att_msb;
-	wire [31:0] this_att_sq_exp;
-	wire [31:0] this_att_sq;
+	wire [6:0] this_delta_term1_half;
+	wire [6:0] this_delta;
+	reg [2:0] this_att_msb;
+	wire [3:0] this_att_sq_exp;
+	wire [6:0] this_att_sq;
 
     assign this_att_sq_exp = {this_att_msb, 1'b0};
-    assign this_att_sq = 32'b1 << this_att_sq_exp;
+    assign this_att_sq = 7'b1 << this_att_sq_exp;
 
 	assign this_delta_term1_half = prev_res << this_att_msb;
-	assign this_delta = {this_delta_term1_half[30:0], 1'b0} + this_att_sq;
+	assign this_delta = {this_delta_term1_half[5:0], 1'b0} + this_att_sq;
 
 	wire cond_met;
 	assign cond_met = this_delta <= prev_eps;
@@ -47,9 +47,11 @@ module anfsqrt_sqrtiu (
     always @* begin
         this_att_msb = 0;
 
-        for (msb_idx=0; msb_idx<32; msb_idx++) begin
-			if(this_att == (1 << msb_idx)) this_att_msb = msb_idx[4:0];
+        for (msb_idx=0; msb_idx < 8; msb_idx++) begin
+			if(this_att == (1 << msb_idx))
+                this_att_msb = msb_idx[2:0];
         end
+
     end
 
 endmodule

@@ -24,6 +24,9 @@ module anfsqrt_sqrtiu_tb();
     end
 
     initial begin
+        $dumpfile("sqrtiu_tb.vcd");
+        $dumpvars;  
+
         prev_att = 1 << 16;
         prev_eps = 256;
         prev_res = 0;
